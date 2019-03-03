@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-"""This function will sort dictionary by its values"""
+"""This function will sort dictionary by its values
+   and retun selected item from sorted dict
+"""
 
 def returnminDict(_dct):
     dict_items = _dct.items()
