@@ -26,6 +26,7 @@ def selectDictSort(_dct):
     return new_dict
 
 def returnItemSelection(_dct, n):
+    """returning selected item"""
     sorteddict = selectDictSort(_dct)
     listsortDict = list(sorteddict.items())
     return listsortDict[n - 1]
