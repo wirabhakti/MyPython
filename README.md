@@ -1,1 +1,1 @@
-This is my repository of pythton
+This is my repository
