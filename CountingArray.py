@@ -16,16 +16,17 @@ parser.add_argument('list_array', help="dont forget give double/single quote", t
 
 
 def CountList(arr):
+    dict_keys = set(arr)
+    new_dict = dict.fromkeys(dict_keys)
     empty_dict = {}
-    for i in arr:
+    for i in dict_keys:
         count = 0
         selected = i
-        new_dict = dict.fromkeys([selected])
         for k in range(len(arr)):
             if arr[k] == selected:
                 count += 1
             new_dict[selected] = count
-        empty_dict.update(new_dict)
+    empty_dict.update(new_dict)
     return empty_dict
 
 if __name__ == '__main__':
